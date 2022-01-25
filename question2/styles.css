@@ -1,0 +1,92 @@
+form {
+    background-color: rgba(23,121,219,255);
+    color: #d5e7f8;
+    padding: 15px 0px;
+    width: 526px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    font-size: 18px;
+    /* font-weight: lighter; */
+}
+
+.container1 {
+    display:flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 20px 0;
+}
+
+.container2 {
+    display: flex;
+    width: 90%;
+}
+
+.container2 > .container3 {
+    flex:3
+}
+
+.container2 > .container1 {
+    flex: 4
+}
+
+.container3 {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+    position: relative;
+}
+.container3 > input {
+    width: 80%;
+    text-align: right;
+}
+
+.container3 > i {
+    position: absolute;
+    left: 10px;
+    top: 36px;
+    font-size: 22px;
+    pointer-events: none;
+}
+
+input, textarea {
+    border: 1px solid white;
+    background-color: transparent;
+    color: #d5e7f8;
+    padding-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+
+input[type ='date'] {
+    padding-left: 0;
+    padding-right: 10px;
+}
+
+
+input {
+    height: 40px;
+}
+/* input[type="date"]{
+ background-image: url(calendar.svg);
+ background-repeat: no-repeat;
+ background-position-x: left;
+ background-color: #d5e7f8;
+ background-size: 25px;
+} */
+
+textarea{
+    /* turn off ability to enlarge textarea */
+    font-style: italic;
+    padding-top : 10px;
+}
+
+label {
+    margin-bottom: 5px;
+}
